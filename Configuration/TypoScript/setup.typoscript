@@ -34,4 +34,26 @@ page.1572349671.switchableControllerActions {
         1 = show
     }
 }
-
+page {
+  123456 = COA
+  123456 {
+    wrap = <div id="replacement-base" class="replacement hidden" data-omcookie-panel-show="">|</div>
+    10 = TEXT
+    10 {
+      wrap = <strong>|</strong>
+      value = Please activate external content in cookie settings.
+      lang {
+        de = Bitte lassen Sie Externe Inhalte in den Cookie Einstellungen zu.
+      }
+    }
+  }
+  includeJSFooter {
+    modules = EXT:om_cookie_manager/Resources/Public/Js/modules.js
+    modules.type = module
+    replace = EXT:om_cookie_manager/Resources/Public/Js/replaceFrame.js
+    replace.type = module
+  }
+  includeCSS {
+    replace = EXT:om_cookie_manager/Resources/Public/Css/replace.css
+  }
+}

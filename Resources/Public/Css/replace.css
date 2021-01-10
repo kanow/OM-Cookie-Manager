@@ -1,0 +1,10 @@
+.replacement.hidden {
+	display:none;
+}
+
+/* iframe replacement */
+.replacement {
+	padding: 2em;
+	background-color: rgba(190,190,190,.8);
+	max-width: 100%;
+}
